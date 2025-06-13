@@ -15,6 +15,7 @@ import {
 import { Input } from '~/components/ui/input';
 import { PasswordInput } from '~/components/common/PasswordInput';
 import { useTranslation } from 'react-i18next';
+import { toast } from 'sonner';
 
 const formSchema = (
   tValidate: (key: string, value?: Record<string, React.ReactNode>) => string
@@ -56,8 +57,14 @@ export function LoginForm() {
       console.log(data);
 
       await new Promise(resolve => setTimeout(resolve, 3000));
+      if (data.email === "admin@gmail.com") {
+        toast.success(t('login.success', {ns: 'auth'}));
+      } else {
+        throw new Error(t('login.error', {ns: 'auth'}));
+      }
     } catch (error) {
       console.error('Login failed:', error);
+      toast.error(t('login.error', {ns: 'auth'}));
     } finally {
       setIsLoading(false);
     }
@@ -79,7 +86,7 @@ export function LoginForm() {
             <FormItem>
               <FormLabel>{t('login.email')}</FormLabel>
               <FormControl>
-                <Input type="email" placeholder="name@example.com" {...field} />
+                <Input type="email" placeholder="admin@gmail.com" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>

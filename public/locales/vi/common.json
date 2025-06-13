@@ -13,11 +13,13 @@
     },
     "404": {
       "title": "Không tìm thấy trang",
-      "description": "Trang bạn đang tìm kiếm không tồn tại hoặc đã bị di chuyển."
+      "description": "Trang bạn đang tìm kiếm không tồn tại hoặc đã bị di chuyển.",
+      "notification": "Không tìm thấy dữ liệu."
     },
     "500": {
       "title": "Lỗi máy chủ",
-      "description": "Rất tiếc! Đã xảy ra lỗi từ phía máy chủ. Vui lòng thử lại sau."
+      "description": "Rất tiếc! Đã xảy ra lỗi từ phía máy chủ. Vui lòng thử lại sau.",
+      "notification": "Đã xảy ra lỗi từ phía máy chủ. Vui lòng thử lại sau."
     },
     "503": {
       "title": "Website đang bảo trì!",

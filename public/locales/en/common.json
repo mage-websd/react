@@ -13,11 +13,13 @@
     },
     "404": {
       "title": "Page Not Found",
-      "description": "The page you're looking for doesn't exist or has been moved."
+      "description": "The page you're looking for doesn't exist or has been moved.",
+      "notification": "Data not found."
     },
     "500": {
       "title": "Server Error",
-      "description": "Oops! Something went wrong on our end. Please try again later."
+      "description": "Oops! Something went wrong on our end. Please try again later.",
+      "notification": "An unexpected error occurred. Please try again later."
     },
     "503": {
       "title": "Website is under maintenance!",

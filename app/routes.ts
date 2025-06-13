@@ -5,6 +5,7 @@ export default [
     index('routes/dashboard/index.tsx'), // home
     route('/dashboard', 'routes/dashboard/Dashboard.tsx'),
     route('/throw-error', 'routes/dashboard/ThrowError.tsx'),
+    route('/call-api', 'routes/dashboard/CallApi.tsx'),
   ]),
 
   layout('layouts/AuthLayout.tsx', prefix('/auth', [route('/login', 'routes/auth/Login.tsx')])),

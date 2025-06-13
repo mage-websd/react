@@ -12,8 +12,8 @@ export const sidebarData: SidebarData = {
           icon: Command,
         },
         {
-          title: 'Tasks',
-          url: '#',
+          title: 'Api',
+          url: '/call-api',
           icon: Command,
         },
         {

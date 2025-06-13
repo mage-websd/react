@@ -1,4 +1,5 @@
 import { Links, Meta, Scripts, ScrollRestoration } from 'react-router';
+import { Toaster } from "~/components/ui/sonner"
 
 export function ThemeLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -12,6 +13,7 @@ export function ThemeLayout({ children }: { children: React.ReactNode }) {
       <body>
         <div className="flex min-h-screen flex-col">
           <main className="flex-grow">{children}</main>
+          <Toaster />
         </div>
         <ScrollRestoration />
         <Scripts />
